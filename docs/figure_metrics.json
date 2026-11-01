@@ -1,0 +1,65 @@
+{
+  "source": "eCO2mix_RTE_Annuel-Definitif_2020.csv",
+  "source_sha256": "20b598b69e6df4269c6e65087e66e2856250ec5826372529c6ef14cda93212c6",
+  "raw_rows": 35136,
+  "complete_rows": 17568,
+  "interval_minutes": 30,
+  "period_start": "2020-01-01 00:00:00",
+  "period_end": "2020-12-31 23:30:00",
+  "target": "Consommation",
+  "source_power_unit": "MW",
+  "display_power_unit": "GW",
+  "mean_demand_MW": 50840.46795309654,
+  "max_demand_MW": 83371.0,
+  "mean_production_MW": {
+    "Fioul": 105.55265255009107,
+    "Charbon": 155.61236338797815,
+    "Gaz": 3924.005806010929,
+    "Nucléaire": 38161.20446265938,
+    "Eolien": 4519.61327413479,
+    "Solaire": 1418.623235428051,
+    "Hydraulique": 7377.761384335155,
+    "Bioénergies": 1101.8541666666667
+  },
+  "ols_features": [
+    "Fioul",
+    "Charbon",
+    "Gaz",
+    "Nucléaire",
+    "Eolien",
+    "Solaire",
+    "Hydraulique",
+    "Pompage",
+    "Bioénergies"
+  ],
+  "ols_intercept": true,
+  "evaluation": "in_sample",
+  "ols_r2": 0.9107570731899038,
+  "ols_rmse_MW": 3272.20567727134,
+  "ols_mae_MW": 2641.2742435699784,
+  "ols_coefficients": [
+    21951.98353790741,
+    4.592119107927103,
+    4.586202115358305,
+    1.6964020860027451,
+    0.7142471065173924,
+    0.7833094521664298,
+    1.02490473404782,
+    0.6117823873932047,
+    0.81041067062376,
+    -13.752295595610185
+  ],
+  "fit_returns_none": true,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "matplotlib": "3.11.2"
+  },
+  "generated_files": [
+    "docs/assets/rte_panorama_2020.png",
+    "docs/assets/rte_panorama_2020.svg",
+    "docs/assets/ols_diagnostic_2020.png",
+    "docs/assets/ols_diagnostic_2020.svg"
+  ]
+}
